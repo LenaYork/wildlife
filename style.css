@@ -24,6 +24,17 @@ a:hover {
     background-color: #CD6326;
 }
 
+.sign-in-button:active {
+    background-color: #8F5613;
+    outline:none;
+}
+
+.sign-in-button:focus {
+    /* background-color: #8F5613; */
+    outline:none;
+}
+
+
 .survival-button:hover, .notified-input-button:hover{
     cursor: pointer;
     background-color: #E39128;
