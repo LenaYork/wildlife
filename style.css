@@ -43,10 +43,6 @@ a:hover {
 }
 
 .header {
-    /* box-sizing: content-box; */
-    /* width: 100%; */
-    /* background-color: blue; */
-    /* width: 1440px; */
     height: 100px;
     margin: 0 auto;
     display: flex;
@@ -70,7 +66,6 @@ a:hover {
 
 
 .logo-container {
-    /* width: 222px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,10 +82,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 500px; */
-    /* margin-left: 10px; */
-
-    
 }
 
 .nav-buttons li {
@@ -118,7 +109,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     
-
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -126,7 +116,6 @@ a:hover {
     line-height: 60px;
     color: #F7F7F7;
     margin: 0;
-    /* padding: 2px 23px; */
     border: 2px solid #CD6326;
     box-sizing: border-box;
     border-radius: 5px;
@@ -140,7 +129,6 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 120px;
-    /* margin-right: 1046px; */
     margin-top: 100px;
 }
 
@@ -156,8 +144,7 @@ h2, h5, p {
     line-height: 72px;
     letter-spacing: 2px;
     color: #CD6326;
-    
-}
+   }
 
 .survival-text {
     font-family: Open Sans;
@@ -165,7 +152,6 @@ h2, h5, p {
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
-    /* or 150% */
     color: #F7F7F7;
 }
 
@@ -177,10 +163,158 @@ h2, h5, p {
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
-    /* line-height: 27px; */
     text-align: center;
     color: #F7F7F7;
     margin-bottom: 1px;
     border: none;
     border-radius: 5px;
+}
+
+.central {
+    width: 1440px;
+    height: 1368px;
+    margin: 0 auto;
+    background-color: #CCCCCC;
+}
+
+.latest {
+    padding-top: 120px;
+}
+
+.latest-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.latest-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #666666;
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+.latest-slider {
+    display: flex;
+    align-items: center;
+    padding: 0 122px;
+}
+
+.slider-pic{
+    position: relative;
+}
+
+.slider-pic {
+    margin-right: 60px;
+}
+
+.latest-arrow-left {
+    margin-right: 62px;
+}
+
+.slider-title{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: #F7F7F7;
+}
+
+.slider-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    color: #F7F7F7;
+    margin-top: 10px;
+    margin-bottom: 44px;
+}
+
+.pictext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.latest-arrow-left {
+    /* padding-right: 5px; */
+}
+
+.latest-arrow-right {
+    /* padding-left: 5px; */
+}
+
+.notified {
+    text-align: center;
+    padding-top: 210px;
+}
+
+.notified-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+}
+
+.notified-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+
+.notified-input{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    color: #666666;
+    width: 540px;
+    height: 60px;
+    padding-left: 5px;
+    background-color: #CCCCCC;
+    margin-right: 0;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.notified-input-button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+    color: #F7F7F7;
+    background-color: #CD6326;
+    width: 120px;
+    height: 60px;
+    margin-left: 0;
+    border: 1px solid #CD6326;
+    border-radius: 0px 5px 5px 0px;  
 }
