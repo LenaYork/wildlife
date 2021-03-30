@@ -318,3 +318,91 @@ h2, h5, p {
     border: 1px solid #CD6326;
     border-radius: 0px 5px 5px 0px;  
 }
+
+.footer {
+    background: url("./assets/footer-bg.jpg");
+    width: 1440px;
+    height: 360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 120px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #F7F7F7;
+    width: 223px;
+}
+
+.footer-nav {
+    width: 500px;
+}
+
+.footer-nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 474px;
+} 
+
+.footer-nav-list a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+}
+
+.social {
+    margin-right: 120px;  
+    width: 280px;  
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.fb-link-svg {
+    background-image: url("./assets/fb.svg");
+    width: 40px;
+    height: 40px;
+}
+
+.insta-link-svg {
+    background-image: url("./assets/insta.svg");
+    width: 40px;
+    height: 40px;
+}
+
+.pi-link-svg {
+    background-image: url("./assets/pi.svg");
+    width: 40px;
+    height: 40px;
+}
+
+.telegram-link-svg {
+    background-image: url("./assets/telegram.svg");
+    width: 40px;
+    height: 40px;
+}
