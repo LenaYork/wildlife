@@ -34,7 +34,6 @@ a:hover {
     outline:none;
 }
 
-
 .survival-button:hover, .notified-input-button:hover{
     cursor: pointer;
     background-color: #E39128;
@@ -44,7 +43,6 @@ a:hover {
     cursor: pointer;
     background-color: #8F5613;
 }
-
 
 .latest-arrow-left:hover, .latest-arrow-right:hover {
     cursor: pointer;
@@ -73,7 +71,6 @@ a:hover {
     padding: 0 120px;
 }
 
-
 .logo-text {
     margin-left: 15px;
     text-transform: uppercase;
@@ -85,19 +82,14 @@ a:hover {
     color: #F7F7F7;
 }
 
-
-
 .logo-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
 
 .nav-buttons a {
     text-decoration: none;
-   
 }
 
 .nav-buttons ul {
