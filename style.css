@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     transition: 0.5s;
     opacity: 0.5;
@@ -41,33 +45,37 @@ a:active {
 
 .sign-in-button:active {
     background-color: #8F5613;
-    outline:none;
+    outline: none;
 }
 
 .sign-in-button:focus {
-    outline:none;
+    outline: none;
 }
 
 .notified-input-button {
     transition: 0.5s;
 }
 
-.survival-button:hover, .notified-input-button:hover{
+.survival-button:hover,
+.notified-input-button:hover {
     cursor: pointer;
     background-color: #E39128;
 }
 
-.survival-button:active, .notified-input-button:active{
+.survival-button:active,
+.notified-input-button:active {
     cursor: pointer;
     background-color: #8F5613;
 }
 
-.latest-arrow-left:hover, .latest-arrow-right:hover {
+.latest-arrow-left:hover,
+.latest-arrow-right:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
 
-.latest-arrow-left:active, .latest-arrow-right:active {
+.latest-arrow-left:active,
+.latest-arrow-right:active {
     transform: scale(1.5);
 }
 
@@ -100,7 +108,7 @@ a:active {
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
-    line-height: 60px;  
+    line-height: 60px;
     color: #F7F7F7;
 }
 
@@ -144,7 +152,7 @@ a:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -169,7 +177,9 @@ a:active {
     margin-top: 100px;
 }
 
-h2, h5, p {
+h2,
+h5,
+p {
     margin: 0;
 }
 
@@ -181,7 +191,7 @@ h2, h5, p {
     line-height: 72px;
     letter-spacing: 2px;
     color: #CD6326;
-   }
+}
 
 .survival-text {
     font-family: Open Sans;
@@ -248,7 +258,7 @@ h2, h5, p {
     padding: 0 122px;
 }
 
-.slider-pic{
+.slider-pic {
     position: relative;
     transition: 0.5s;
 }
@@ -266,7 +276,7 @@ h2, h5, p {
     transition: 0.5s;
 }
 
-.slider-title{
+.slider-title {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -322,7 +332,7 @@ h2, h5, p {
 }
 
 
-.notified-input{
+.notified-input {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -359,7 +369,7 @@ h2, h5, p {
     height: 60px;
     margin-left: 0;
     border: 1px solid #CD6326;
-    border-radius: 0px 5px 5px 0px;  
+    border-radius: 0px 5px 5px 0px;
 }
 
 .footer {
@@ -404,9 +414,9 @@ h2, h5, p {
     justify-content: space-between;
     align-items: center;
     width: 474px;
-} 
+}
 
-.footer-nav-list a{
+.footer-nav-list a {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -416,15 +426,15 @@ h2, h5, p {
 }
 
 .social {
-    margin-right: 120px;  
-    width: 280px;  
+    margin-right: 120px;
+    width: 280px;
 }
 
 .social-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
+}
 
 .fb-link-svg {
     background-image: url("./assets/fb.svg");
