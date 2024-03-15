@@ -463,3 +463,64 @@ p {
 button {
     transition: 0.5s;
 }
+
+@media (max-width: 1400px) {
+
+    .background-fox,
+    .central,
+    .footer {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 1230px) {
+    .footer-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .footer-nav {
+        width: 50%
+    }
+
+    .footer-nav-list {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .social {
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .social-list {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .footer-nav {
+        width: 80vw;
+    }
+
+    .social {
+        width: 50%;
+    }
+}
+
+@media (max-width: 590px) {
+    .social {
+        width: 80vw;
+    }
+
+    .footer-nav-list a {
+        font-size: 18px;
+    }
+}
