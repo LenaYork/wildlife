@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -505,11 +505,12 @@ button {
     position: absolute;
     right: -100vw;
     transition: 2s;
+    z-index: 9;
 }
 
-modal-container.visible+body {
-    overflow: hidden;
-}
+/* modal-container.visible+body {
+    overflow-y: hidden;
+} */
 
 .visible {
     right: 0;
