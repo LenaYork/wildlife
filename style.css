@@ -5,6 +5,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow: hidden;
+}
+
 a {
     transition: 0.5s;
     opacity: 0.5;
@@ -473,6 +477,73 @@ button {
     transition: 0.5s;
 }
 
+.burger-container {
+    height: 32px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.line {
+    cursor: pointer;
+    width: 50px;
+    height: 5px;
+    background-color: #CD6326;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.burger-container:hover .line {
+    background-color: #E39128;
+}
+
+.modal-container {
+    height: 100vh;
+    width: 90vw;
+    background-color: #0e3f0e;
+    position: absolute;
+    right: -100vw;
+    transition: 2s;
+}
+
+modal-container.visible+body {
+    overflow: hidden;
+}
+
+.visible {
+    right: 0;
+}
+
+.mobile-menu ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0 auto;
+    padding-top: 5vh;
+    height: 250px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-link-mobile {
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+}
+
+.close-modal-icon {
+    width: 50px;
+    height: 50px;
+    background: url(./assets/close.svg);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
 @media (max-width: 1399px) {
 
     .background-fox {
@@ -526,6 +597,10 @@ button {
     .header {
         margin: 0;
         padding: 0 20px;
+    }
+
+    .burger-container {
+        display: flex;
     }
 
     .survival {
@@ -655,6 +730,10 @@ button {
 }
 
 @media (max-width: 390px) {
+    .header {
+        padding-right: 10px;
+    }
+
     .survival {
         width: 80vw;
     }
