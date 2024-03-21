@@ -141,8 +141,12 @@
                 Get notified about new amazing articles
             </h3>
             <form action="" class="notified-form">
-                <input type="email" class="notified-input" placeholder="Email">
+                <input type="email" class="notified-input" placeholder="Email" required>
                 <input class="notified-input-button" type="submit" value="Send">
+
+                <div id="popup" class="popup">
+                    <p>Your email is incorrect</p>
+                </div>
             </form>
         </section>
     </main>
@@ -190,7 +194,7 @@
         </div>
     </footer>
 
-<script src="./main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

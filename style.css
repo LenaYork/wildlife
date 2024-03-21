@@ -338,6 +338,7 @@ p {
     display: flex;
     justify-content: center;
     padding-top: 32px;
+    position: relative;
 }
 
 
@@ -545,6 +546,18 @@ button {
     cursor: pointer;
 }
 
+.popup {
+    position: absolute;
+    padding: 20px;
+    background-color: #CD6326;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    opacity: 0;
+    transition: 3s;
+}
+
 @media (max-width: 1399px) {
 
     .background-fox {
@@ -668,6 +681,11 @@ button {
 
     .notified-input {
         width: 70vw;
+    }
+
+    .popup {
+        left: 15%;
+        z-index: 9999;
     }
 
     .footer {
