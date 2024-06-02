@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+* {
+    user-select: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    max-width: 100%;
+    position: relative;
+}
+
+html,
+body {
     overflow-x: hidden;
+    width: 100%;
 }
 
 a {
@@ -265,15 +276,23 @@ p {
     padding: 0 122px;
 }
 
+
 .pics-container {
     width: 1020px;
+    height: 360px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    transition: 1s ease;
+    scroll-behavior: smooth;
+    gap: 60px;
 }
 
 .slider-pic {
+    height: 360px;
+    width: 300px;
     position: relative;
-    margin-right: 60px;
+    /* margin-right: 60px; */
     transition: 0.5s;
 }
 
@@ -570,17 +589,25 @@ button {
     }
 
     .pics-container {
-        width: 85vw;
+        /* width: 90vw; */
+        width: 660px;
+        gap: 60px;
+        /* gap: inherit; */
     }
 
     .latest-slider {
-        width: 97vw;
-        justify-content: space-around;
+        /* width: 97vw; */
+        box-sizing: border-box;
+        width: 741px;
+        margin: 0 auto;
+        justify-content: space-between;
         padding: 0 5px;
+        gap: 1%;
     }
 
     .slider-pic {
         margin-right: 0;
+        /* margin: 0 60px; */
     }
 
     .background-fox,
@@ -597,9 +624,9 @@ button {
     }
 
     .pics-container {
-        width: 50vw;
-        flex-wrap: wrap;
-        justify-content: center;
+        /* width: 50vw; */
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
     }
 
     .footer-logo {
@@ -628,6 +655,15 @@ button {
     .nav-buttons {
         display: none;
     }
+
+    /* .pics-container {
+        width: 70vw;
+    } */
+
+    /* .slider-pic {
+        width: 100% !important;
+        margin: 0 60px;
+    } */
 
     .footer-nav {
         width: 50%
@@ -675,6 +711,18 @@ button {
         font-size: 22px;
     }
 
+    .central {
+        height: 1000px;
+    }
+
+    main {
+        height: 1000px !important;
+    }
+
+    .notified {
+        padding-top: 100px;
+    }
+
     .notified-title {
         font-size: 24px;
     }
@@ -686,6 +734,16 @@ button {
     .popup {
         left: 15%;
         z-index: 9999;
+    }
+
+    .latest-slider {
+        width: 90vw;
+    }
+
+    .pics-container {
+        /* width: 60vw; */
+        width: 300px;
+        /* gap: 1%; */
     }
 
     .footer {
@@ -755,5 +813,9 @@ button {
 
     .survival {
         width: 80vw;
+    }
+
+    .latest-slider {
+        width: 98vw;
     }
 }

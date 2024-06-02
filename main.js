@@ -40,6 +40,102 @@ function showPopup() {
     }, 3000);
 }
 
-// function hidePopup() {
-//     document.getElementById("popup").style.opacity = 0;
-// }
+
+const ANIMALS = [
+    {
+        name: "Deer",
+        description: "Naturalist investigation",
+        pic: "./assets/deer.jpg"
+    },
+    {
+        name: "Squirrel",
+        description: "Kamikaze squirrels",
+        pic: "./assets/squirrel.jpg"
+    },
+    {
+        name: "Bird",
+        description: "Birds Fight club",
+        pic: "./assets/bird.jpg"
+    },
+    {
+        name: "Fox",
+        description: "Witty hunter",
+        pic: "./assets/deer.jpg"
+    },
+    {
+        name: "Wolf",
+        description: "Clever strategist",
+        pic: "./assets/squirrel.jpg"
+    },
+    {
+        name: "Bird",
+        description: "Birds Fight club",
+        pic: "./assets/bird.jpg"
+    },
+]
+
+let windowWidth = window.innerWidth;
+window.addEventListener("resize", () => {
+    windowWidth = window.innerWidth;
+})
+
+const picsContainer = document.querySelector(".pics-container");
+
+function createCards() {
+    console.log("hellooooo")
+    // const picsContainer = document.querySelector(".pics-container");
+    ANIMALS.map((animal) => {
+        const card = document.createElement("div");
+        card.classList.add("slider-pic");
+        const cardText = document.createElement("div");
+        cardText.classList.add("pictext");
+        const cardTitle = document.createElement("h5");
+        cardTitle.classList.add("slider-title");
+        cardTitle.textContent = animal.name;
+        const cardDescription = document.createElement("p");
+        cardDescription.classList.add("slider-text");
+        cardDescription.textContent = animal.description;
+        const cardImage = document.createElement("img");
+        cardImage.setAttribute("alt", animal.name);
+        cardImage.setAttribute("src", animal.pic);
+        cardText.append(cardTitle, cardDescription);
+        card.append(cardText, cardImage);
+        picsContainer.appendChild(card);
+    })
+
+}
+
+createCards();
+
+const leftArrow = document.querySelector('#left-arrow');
+const rightArrow = document.querySelector('#right-arrow');
+let currentIndex = 0;
+
+const sliderStep = 360;
+const sliderStepMobile = 300;
+
+leftArrow.addEventListener("click", () => {
+    currentIndex--;
+    console.log(currentIndex)
+    console.log("windowWIdth", windowWidth)
+
+    if (windowWidth > 767) {
+        picsContainer.scrollLeft -= sliderStep;
+    } else if (windowWidth <= 767) {
+        picsContainer.scrollLeft -= sliderStepMobile;
+    }
+
+})
+
+rightArrow.addEventListener("click", () => {
+    currentIndex++;
+    console.log(currentIndex)
+    console.log("windowWIdth", windowWidth)
+
+    if (windowWidth > 767) {
+        picsContainer.scrollLeft += sliderStep;
+    } else if (windowWidth <= 767) {
+        picsContainer.scrollLeft += sliderStepMobile;
+    }
+
+})
