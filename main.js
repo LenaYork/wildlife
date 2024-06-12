@@ -82,8 +82,6 @@ window.addEventListener("resize", () => {
 const picsContainer = document.querySelector(".pics-container");
 
 function createCards() {
-    console.log("hellooooo")
-    // const picsContainer = document.querySelector(".pics-container");
     ANIMALS.map((animal) => {
         const card = document.createElement("div");
         card.classList.add("slider-pic");
