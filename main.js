@@ -60,17 +60,17 @@ const ANIMALS = [
     {
         name: "Fox",
         description: "Witty hunter",
-        pic: "./assets/deer.jpg"
+        pic: "./assets/fox.jpg"
     },
     {
         name: "Wolf",
         description: "Clever strategist",
-        pic: "./assets/squirrel.jpg"
+        pic: "./assets/wolf.jpg"
     },
     {
-        name: "Bird",
-        description: "Birds Fight club",
-        pic: "./assets/bird.jpg"
+        name: "Tiger",
+        description: "Striped lazy cat",
+        pic: "./assets/tiger.jpg"
     },
 ]
 
@@ -109,33 +109,13 @@ createCards();
 
 const leftArrow = document.querySelector('#left-arrow');
 const rightArrow = document.querySelector('#right-arrow');
-let currentIndex = 0;
 
 const sliderStep = 360;
-const sliderStepMobile = 300;
 
 leftArrow.addEventListener("click", () => {
-    currentIndex--;
-    console.log(currentIndex)
-    console.log("windowWIdth", windowWidth)
-
-    if (windowWidth > 767) {
-        picsContainer.scrollLeft -= sliderStep;
-    } else if (windowWidth <= 767) {
-        picsContainer.scrollLeft -= sliderStepMobile;
-    }
-
+    picsContainer.scrollLeft -= sliderStep;
 })
 
 rightArrow.addEventListener("click", () => {
-    currentIndex++;
-    console.log(currentIndex)
-    console.log("windowWIdth", windowWidth)
-
-    if (windowWidth > 767) {
-        picsContainer.scrollLeft += sliderStep;
-    } else if (windowWidth <= 767) {
-        picsContainer.scrollLeft += sliderStepMobile;
-    }
-
+    picsContainer.scrollLeft += sliderStep;
 })
